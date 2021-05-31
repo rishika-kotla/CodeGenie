@@ -295,6 +295,40 @@ button:hover
      }
  }
 
+.dropa1:hover
+{
+   color: white;
+   text-decoration: none;
+   cursor: pointer;
+}
+#nav-algom:hover, #nav-dsm:hover{
+color: black;
+}
+.datastructres-div
+{
+   display: flex;
+   width: 200px;
+   top: 65px;
+   display:none;
+   background-color: white;
+}
+.datastictures-list ul li a{
+    text-decoration: none;
+    color: black;
+   
+    font-style: normal;
+    font-family: monospace;
+    
+}
+#nav-ds, #nav-algo{
+    color:rgb(177, 169, 169);
+
+}
+#nav-ds:hover, #nav-algo:hover{
+  color: white;
+  cursor: pointer;
+}
+
 
  
  
