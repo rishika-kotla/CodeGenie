@@ -274,6 +274,14 @@ button:hover
         margin-right: auto;
         width: 80%;
       }
+     .drops{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .dropdown1-contentm{
+        display: none;
+      }
      
  }
  @media only screen and (max-width:600px){
