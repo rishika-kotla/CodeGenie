@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagestyle.css">
+    <title>TREE</title>
+
+</head>
+<body>
+    <h1>TREE</h1>
+    <div class="container fade-in-text">
+        <p>A Tree is a non-linear data structure where each node is connected to a number of nodes with the help of pointers or references.</p>
+        <p>A Sample tree is as shown below:</p>
+        <img src="./tree.png" alt="" width="30% " height="230px">
+
+    
+  <p class="ul-list-head"><b>Basic Tree Terminologies:</b></p>
+  <ul>
+      <li>Root: The root of a tree is the first node of the tree. In the above image, the root node is the node 30.</li>
+      <li>Edge: An edge is a link connecting any two nodes in the tree. For example, in the above image there is an edge between node 11 and 6.</li>
+      <li>Siblings: The children nodes of same parent are called siblings. That is, the nodes with same parent are called siblings. In the above tree, nodes 5, 11, and 63 are siblings.</li>
+      <li>Leaf Node: A node is said to be the leaf node if it has no children. In the above tree, node 15 is one of the leaf nodes.</li>
+      <li>Height of a Tree: Height of a tree is defined as the total number of levels in the tree or the length of the path from the root node to the node present at the last level. The above tree is of height 2.</li>
+  </ul>
+  <p class="ul-list-head"><b>Binary Tree Traversala</b></p>
+  <ul>
+      <li>Inorder (Left, Root, Right): 4 2 1 3</li>
+      <li>Preorder (Root, Left, Right): 1 2 4 3 </li>
+      <li>Postorder (Left, Right, Root): 4 2 3 1</li>
+  </ul>
+  <p class="list-heading"><b>Level Order Traversal of a Binary Tree Algorithm:</b></p>
+  <ol class="fun">
+      <li>Create an empty queue q.</li>
+      <li>Push the root node of tree to q. That is, q.push(root).</li>
+      <li>Loop while the queue is not empty
+          <ul>
+              <li>Pop the top node from queue and print the node.</li>
+              <li>Enqueue node's children (first left then right children) to q</li>
+              <li>Repeat the process until queue is not empty.</li>
+            </ul>
+      </li>
+  </ol>
+</div>
+</body>
+</html>

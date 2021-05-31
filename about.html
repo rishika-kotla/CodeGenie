@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ 
+<style>
+   *{
+       margin: 0%;
+       padding: 0%;
+   }
+   nav{
+       background-color: rgba(0, 0, 0, 0.767);
+       color: white;
+       padding: 1px;
+       font-size: 3rem;
+       text-align: center;
+   }
+   #demo{
+       margin: 2% 2% 2% 2%;
+       font-size:2rem;
+       border-radius: 1rem 0rem 1rem 0rem;
+       height: 112px;
+       font-family: monospace;
+   }
+   body{
+       background-color: rgb(125, 241, 230);
+   }
+   
+</style>
+
+
+<body>
+
+<nav>About Me</nav>
+<p id="demo"></p>
+ <h5 id="demo2"></h5>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+ typeWriter();
+})
+
+var i = 0;
+var txt = 'Hey there! Welcome to Code Genie...     I am Rishika, student at National Institute of Technology Calicut. I am a Front End Developer and Competitive Programmer.  I enjoy taking complex problems and turning them into simple and efficient programmes. Code Genie is my first blog , it is a collection of Data Structures , Algorithms and examples .Coding is the fundamental skill for jobs such as software development. Outside from the implications of coding which look good on a resume, coding actually does boost skills which are actually useful to most jobs. Problem solving and logic are the main two. Learning to code is like an exercise session for the “left” side of the brain. I wish this blog helps you in improving your coding skills. HAPPY CODING :)'
+var speed = 50;
+var i2=0;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  } 
+
+} 
+
+</script>
+
+</body>
+</html>

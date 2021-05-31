@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagestyle.css">
+    <title>QuickSort</title>
+</head>
+
+<body>
+    <h1>Quick Sort</h1>
+    <div class="container fade-in-text" id="container1">
+        
+        <p class="fade">QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array
+            around the picked pivot.There are many different versions of quickSort that pick pivot in different ways.</p>   
+        <ol>
+            <li>Always pick first element as pivot.</li>
+            <li>Always pick last element as pivot (implemented be
+            <li> Pick median as pivot</li>
+        </ol>
+        
+       
+      
+        <p class="fade" id="1">The key process in quickSort is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.</p>
+
+        
+    <p><b>Pseudo Code for recursive QuickSort function :</b></p>
+    <div class="fun fade">
+        <p> /* low  --> Starting index,  high  --> Ending index */  <br>
+            quickSort(arr[], low, high) <br>
+     { <br>
+      &nbsp;   if (low &#60 high) <br>
+      &nbsp;   {   <br>  
+        
+      &nbsp;&nbsp;&nbsp; /* pi is partitioning index, arr[pi] is now <br>
+      &nbsp;&nbsp;&nbsp;                   at right place */ <br>
+ 
+      &nbsp;&nbsp;&nbsp;   pi = partition(arr, low, high); <br>
+      &nbsp;&nbsp;&nbsp;    quickSort(arr, low, pi - 1);  // Before pi<br>
+      &nbsp;&nbsp;&nbsp;   quickSort(arr, pi + 1, high); // After pi<br>
+
+       &nbsp;} <br>  
+     }</p>  
+     </div> 
+
+     <p><b>Pseudo Code for Partition function :</b></p>
+     <div class="fun">
+         <p> /* This function takes last element as pivot, places <br>
+            the pivot element at its correct position in sorted <br>
+            array, and places all smaller (smaller than pivot) <br>
+            to left of pivot and all greater elements to right <br>
+            of pivot */ <br>
+            partition (arr[], low, high) <br>
+      {    &nbsp;  // pivot (Element to be placed at right position) <br>
+             &nbsp;  pivot = arr[high];      <br>
+       &nbsp;  i=(low - 1) // Index of smaller element <br>
+       &nbsp;   for (j = low; j &#60= high- 1; j++)   <br>  
+          &nbsp;{
+       &nbsp;&nbsp;&nbsp; // If current element is smaller than or <br>
+       &nbsp;&nbsp;&nbsp;  // equal to pivot <br>                   at right place */ <br>
+  
+       &nbsp;&nbsp;&nbsp;    if (arr[j] &#60= pivot) <br>
+       &nbsp;&nbsp;&nbsp; { <br>
+        &nbsp;&nbsp;&nbsp;  i++;    // increment index of smaller element <br>
+        &nbsp;&nbsp;&nbsp;swap arr[i] and arr[j] <br>
+        &nbsp;&nbsp;&nbsp; }<br>
+        &nbsp; } <br>
+   } <br>
+ 
+      
+      </p>  
+      </div> 
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script>
+    
+   </script>
+</body>
+
+</html>
