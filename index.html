@@ -16,7 +16,9 @@
    text-decoration: none;
    cursor: pointer;
 }
-
+#nav-algom:hover, #nav-dsm:hover{
+color: black;
+}
 .datastructres-div
 {
    display: flex;
@@ -50,9 +52,28 @@
       <a href="#home" class="active">CODE GENIE</a>
       <div id="myLinks">
         <a href="#news">HOME</a>
-        <a href="#contact">ABOUT</a>
-        <a href="#about" >DATA STRUCTURES</a>
-         <a href="#about" >ALGORITHMS</a>
+        <a href="./about.html">ABOUT</a>
+        <div class="drops">
+        <div class="dropdown1m">
+          <a id="nav-dsm">DATA STRUCTURES</a>
+          <div class="dropdown1-contentm ds-display"> 
+         <p> <a id="dropb1m" href="./array.html">Arrays</a></p>
+          <p><a id="dropb2m" href="./linkedlist.html">Linked List</a></p>
+          <p><a id="dropb3m" href="./trees.html">Tree</a></p>
+          <p><a id="dropb4m" href="./page-under-construction.png">Heap</a></p> 
+          </div>
+        </div>
+        <div class="dropdown1m">
+          <a id="nav-algom">ALGORITHMS</a>
+          <div class="dropdown1-contentm algo-display">
+          
+         <p> <a id="dropa1m" href="./bubblesort.html" id="dropa1">Bubble Sort</a> </p>
+          <p><a id="dropa2m" href="./page-under-construction.png">Insertion Sort</a></p>
+          <p><a id="dropa3m" href="./page-under-construction.png">Dijkstra's Algorithm</a></p>
+          <p><a id="dropa4m" href="./quicksort.html">Quick Sort</a></p>
+          </div>
+        </div>
+      </div>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
@@ -115,7 +136,7 @@
     <li class="nav-li">
         <div class="dropdown1">
             <a id="nav-algo">ALGORITHMS</a>
-            <div class="dropdown1-content">
+            <div class="dropdown1-content ">
             
            <p> <a href="./bubblesort.html" id="dropa1">Bubble Sort</a> </p>
             <p><a id="dropa2" href="./page-under-construction.png">Insertion Sort</a></p>
@@ -280,6 +301,20 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+  $("#nav-dsm").hover(function(){
+    $(".dropdown1-contentm").css("display","block");
+    $(".algo-display").css("display","none");
+    // $('#nav-dsm').css("color","black");
+    console.log("running")
+  })
+  $("#nav-algom").hover(function(){
+    $(".ds-display").css("display","none");
+    $(".algo-display").css("display","block");
+    
+    console.log("running")
+  })
 
+</script>
 </body>
 </html>
